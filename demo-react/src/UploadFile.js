@@ -27,17 +27,15 @@ class UploadFile extends Component {
             this.setState({
               originalImage: response.original,
               sizeOriganleImage: getImageSize(response.original),
-              compressedImage: response.compressed.base64,
-              sizeCompressedImage: getImageSize(response.compressed.base64)
+              compressedImage: response.compressed,
+              sizeCompressedImage: getImageSize(response.compressed)
             });
-            console.log("compressed");
             console.log(response);
           },
           scale: 70,
           quality: 70,
           holdCompress: false,
-          originalImage: reader.result,
-          fileName: file.name
+          originalImage: reader.result
         });
         imageCompressor.startCompress();
       };

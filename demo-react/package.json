@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "compressor-img": "^1.0.3",
+    "compressor-img": "^1.0.5",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-icons": "^3.1.0",

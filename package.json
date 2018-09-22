@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "babel lib -d build-lib --copy-files"
+    "build": "babel lib -d build-lib --copy-files && cp README.md ./build-lib/"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

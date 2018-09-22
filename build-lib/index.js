@@ -26,7 +26,6 @@ var ImageCompressor = function () {
       throw "ImageCompressor : Please Set The Requirement Properties : [ originalImage , onSuccess ]";
     }
     this.props = props;
-    this.props.fileName = props.fileName || Date.now().toString + ".jpg";
     this.props.scale = props.scale || DEFUALT_SCALE;
     this.props.quality = props.scale || DEFUALT_SCALE;
     if (!props.originalImage) {
@@ -54,40 +53,24 @@ var ImageCompressor = function () {
     value: function compress() {
       var _this = this;
 
-      // Recreate Canvas Element
       var canvas = document.createElement("canvas");
-
-      // Set Canvas Context
       var ctx = canvas.getContext("2d");
 
-      // Create New Image
       var img = new Image();
       img.onload = function () {
-        // Image Size After Scaling
         var scale = _this.props.scale / 100;
         var width = img.width * scale;
         var height = img.height * scale;
 
-        // Set Canvas Height And Width According to Image Size And Scale
         canvas.setAttribute("width", width);
         canvas.setAttribute("height", height);
-
         ctx.drawImage(img, 0, 0, width, height);
 
-        // Quality Of Image
-        var quality = _this.props.quality ? _this.props.quality / 100 : 1;
+        var quality = _this.props.quality / 100;
 
-        // If all files have been proceed
-        var base64 = canvas.toDataURL("image/jpeg", quality);
-        var lastDot = _this.props.fileName.lastIndexOf(".");
-        _this.props.fileName = _this.props.fileName.substr(0, lastDot) + ".jpeg";
         var output = {
-          original: _this.props.originalImage, // set the orginale
-          compressed: {
-            base64: base64,
-            name: _this.props.fileName,
-            type: "image/jpeg"
-          }
+          original: _this.props.originalImage,
+          compressed: canvas.toDataURL("image/jpeg", quality)
         };
         _this.props.onSuccess(output);
       };

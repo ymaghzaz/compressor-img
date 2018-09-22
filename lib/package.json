@@ -1,6 +1,6 @@
 {
   "name": "compressor-img",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Javascript library for  client side image compressor ",
   "main": "index.js",
   "scripts": {
