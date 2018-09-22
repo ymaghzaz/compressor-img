@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { ImageCompressor, getImageSize } from "./compressor-img";
+import { ImageCompressor, getImageSize } from "compressor-img";
 import { FaUpload } from "react-icons/fa";
 
 class UploadFile extends Component {
@@ -70,7 +70,13 @@ class UploadFile extends Component {
               this.state.sizeCompressedImage +
               " kb"}
           {this.state.compressedImage && (
-            <img src={this.state.compressedImage} />
+            <img
+              style={{
+                maxWidth: "600px",
+                maxheight: "400px"
+              }}
+              src={this.state.compressedImage}
+            />
           )}
         </div>
       </div>

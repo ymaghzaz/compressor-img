@@ -1557,6 +1557,10 @@ compression@^1.5.2:
     safe-buffer "5.1.2"
     vary "~1.1.2"
 
+compressor-img@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/compressor-img/-/compressor-img-1.0.2.tgz#603c8facca6cfa67796f232849c68b6ca653db46"
+
 concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
