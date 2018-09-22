@@ -1,0 +1,27 @@
+{
+  "name": "@ysfmag/compressor-img",
+  "version": "1.0.0",
+  "description": "Javascript library for  client side image compressor ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ysfmag/compressor-img.git"
+  },
+  "keywords": [
+    "react",
+    "angular",
+    "vue",
+    "compressor",
+    "javascript",
+    "image-compressor"
+  ],
+  "author": "youssef maghzaz <contact@maghzaz.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ysfmag/compressor-img/issues"
+  },
+  "homepage": "https://github.com/ysfmag/compressor-img#readme"
+}
