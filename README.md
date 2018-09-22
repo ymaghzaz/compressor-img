@@ -34,8 +34,7 @@ const params = {
   onSuccess: response => {},
   scale: 70,
   quality: 70,
-  originalImage: "data:image/jpeg;base64,/9j/4RiDRXhpZgAATU0AKgA...",
-  fileName: "fileName.jpeg"
+  originalImage: "data:image/jpeg;base64,/9j/4RiDRXhpZgAATU0AKgA..."
 };
 new ImageCompressor(params);
 ```
