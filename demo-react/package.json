@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "compressor-img": "^1.0.2",
+    "compressor-img": "^1.0.3",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-icons": "^3.1.0",
@@ -11,7 +11,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp -a ./build/ ../public/",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
