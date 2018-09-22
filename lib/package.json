@@ -1,6 +1,6 @@
 {
-  "name": "@ysfmag/compressor-img",
-  "version": "1.0.0",
+  "name": "compressor-img",
+  "version": "1.0.2",
   "description": "Javascript library for  client side image compressor ",
   "main": "index.js",
   "scripts": {
