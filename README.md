@@ -2,7 +2,7 @@
 
 [![Version](https://img.shields.io/npm/v/compressor-img.svg)](https://www.npmjs.com/package/compressor-img)
 
-> Javascript library for image compressor in client side
+> Javascript library for client side image compressing
 
 - [Demo](https://compressor-img.firebaseapp.com)
 
