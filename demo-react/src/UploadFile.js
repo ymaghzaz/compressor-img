@@ -70,8 +70,8 @@ class UploadFile extends Component {
           {this.state.compressedImage && (
             <img
               style={{
-                maxWidth: "600px",
-                maxheight: "400px"
+                width: "400px",
+                height: "300px"
               }}
               src={this.state.compressedImage}
             />
