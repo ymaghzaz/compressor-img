@@ -5,6 +5,8 @@
 > Javascript library for client side image compressing
 
 - [Demo](https://compressor-img.firebaseapp.com)
+- [Integration in React](https://github.com/ysfmag/compressor-img/tree/master/demo-react)
+- [Integration in Angular](https://github.com/ysfmag/compressor-img/tree/master/demo-angular)
 
 ## Table of contents
 
