@@ -5,6 +5,8 @@
 > Javascript library for image compressor in client side
 
 - [Demo](https://compressor-img.firebaseapp.com)
+- [Integration in React](https://github.com/ysfmag/compressor-img/tree/master/demo-react)
+- [Integration in Angular](https://github.com/ysfmag/compressor-img/tree/master/demo-angular)
 
 ## Table of contents
 
@@ -34,8 +36,7 @@ const params = {
   onSuccess: response => {},
   scale: 70,
   quality: 70,
-  originalImage: "data:image/jpeg;base64,/9j/4RiDRXhpZgAATU0AKgA...",
-  fileName: "fileName.jpeg"
+  originalImage: "data:image/jpeg;base64,/9j/4RiDRXhpZgAATU0AKgA..."
 };
 new ImageCompressor(params);
 ```
