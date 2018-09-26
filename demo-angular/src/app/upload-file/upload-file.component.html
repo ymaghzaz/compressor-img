@@ -1,0 +1,15 @@
+<div class="upload-file-container">
+  <div class="upload-file-input">
+    <label for="file">
+      <div class="upload-type">
+
+        <span> Upload File </span>
+      </div>
+    </label>
+    <input id="file" type="file" (change)="handleImageChange($event)" />
+  </div>
+  <div class="display-compressed-image">
+    <div *ngIf="sizeOriganleImage"> {{sizeOriganleImage}} kb -> {{sizeCompressedImage}} kb </div>
+    <img *ngIf="compressedImage" class="image-compressed" src="{{compressedImage}}" />
+  </div>
+</div>
